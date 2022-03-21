@@ -24,7 +24,7 @@ const Home = () => {
     <>
     <div style={{minHeight:'calc(100vh - 104px)'}} className="w-full box-border p-2 flex justify-center bg-gray-200 pt-2">
         <form onSubmit={handleOnSubmit} className="md:w-1/2 w-full box-border p-2 flex flex-col items-center">
-            <input type="text" id='title' onClick={()=>document.getElementById('title').select()}  onChange={handleOnChange} name="title" className='w-full p-2 border border-gray-400 my-1 focus:outline-none' placeholder='Email title..'/>
+            <input type="text" id='title' onClick={()=>document.getElementById('title').select()}  onChange={handleOnChange} name="title" className='w-full p-2 border border-gray-400 my-1 focus:outline-none' placeholder='Title..'/>
             <input type="email" id='email' onClick={()=>document.getElementById('email').select()}  onChange={handleOnChange} name="email" className='w-full p-2 border border-gray-400 my-1 focus:outline-none' placeholder='Enter email (for more than one, seprate by comma) ' multiple required/>
             <textarea id='message' onClick={()=>document.getElementById('message').select()} onChange={handleOnChange} name="message" className='w-full p-2 border border-gray-400 my-1 focus:outline-none h-40' placeholder='Type your message ' />
             <input type="number" onChange={handleOnChange} name="count" className='w-full p-2 border border-gray-400 my-1 focus:outline-none' placeholder='Count'/>
