@@ -34,7 +34,7 @@ const Home = () => {
                 <input type="radio" className='cursor-pointer my-1' name='format'  onChange={handleOnChange} value="text"/> Text
                 <input type="radio" name='format' className='cursor-pointer ml-2' onChange={handleOnChange} value="html"/> HTML
             </div>
-            <textarea id='message' onClick={()=>document.getElementById('message').select()} onChange={handleOnChange} name="message" className='w-full p-2 glassmorphism my-1 p-2 focus:outline-none h-40' placeholder={user.format==='text'?'Type your message':"Type or paste your html codes"} />
+            <textarea id='message' onClick={()=>document.getElementById('message').select()} onChange={handleOnChange} name="message" className='w-full glassmorphism my-1 p-2 focus:outline-none h-40' placeholder={user.format==='text'?'Type your message':"Type or paste your html codes"} />
             <input type="number" onChange={handleOnChange} name="count" className='w-full p-2 glassmorphism my-1 focus:outline-none' placeholder='Count'/>
             <button type="submit"  className='w-full p-2 my-1 gr-color focus:outline-none  cursor-pointer flex justify-center glassmorphism'>{loading?<Spinner/>:"Boom"} </button>
         </form>
