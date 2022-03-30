@@ -26,7 +26,7 @@ const Home = () => {
     }
   return (
     <>
-    <div style={{minHeight:'calc(100vh - 104px)'}} className="w-full box-border p-2 flex items-center justify-center pt-2">
+    <div style={{minHeight:'calc(100vh - 104px)'}} className="md:items-center w-full box-border p-2 flex  items-start justify-center pt-2">
         <form onSubmit={handleOnSubmit} className="md:w-1/2 form rounded w-full h-full box-border p-3 glassmorphism flex flex-col justify-center items-center">
             <input type="text" id='title' onClick={()=>document.getElementById('title').select()}  onChange={handleOnChange} name="title" className='w-full p-2 glassmorphism my-1 focus:outline-none' placeholder='Title..'/>
             <input type="email" id='email' onClick={()=>document.getElementById('email').select()}  onChange={handleOnChange} name="email" className='w-full p-2 glassmorphism my-1 focus:outline-none' placeholder='Enter email (for more than one, seprate by comma) ' multiple required/>
